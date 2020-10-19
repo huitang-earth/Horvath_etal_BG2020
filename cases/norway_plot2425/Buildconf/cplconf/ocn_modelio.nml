@@ -1,0 +1,11 @@
+&modelio
+ diri = '/work/huit/noresm/norway_plot2425/bld/ocn'
+ diro = '/work/huit/noresm/norway_plot2425/run'
+ logfile = 'ocn.log.161116-115326'
+/
+&pio_inparm
+ pio_numiotasks = 32
+ pio_root = 0
+ pio_stride = 16
+ pio_typename = 'pnetcdf'
+/

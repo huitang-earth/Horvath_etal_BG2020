@@ -1,0 +1,11 @@
+&modelio
+ diri = '/work/huit/noresm/norway_plot2238/bld/ice'
+ diro = '/work/huit/noresm/norway_plot2238/run'
+ logfile = 'ice.log.161116-113518'
+/
+&pio_inparm
+ pio_numiotasks = 32
+ pio_root = 0
+ pio_stride = 16
+ pio_typename = 'pnetcdf'
+/

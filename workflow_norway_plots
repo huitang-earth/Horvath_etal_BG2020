@@ -1,0 +1,77 @@
+#!/bin/bash
+
+plots="405 513 622 801 922 1131 1304 1322 1623 2015 2108 2238 2332 2425 2948 2962 4268 5369 6380 6473"
+
+first_phase="T"          # Prepare inpudate and run 5-day test run
+second_phase="F"         # Run 420-year production runs
+
+module load nco          
+
+for plotn in $plots; do
+
+ if [ ${first_phase} = "T" ]
+ then
+
+## create domain files (kept in "inputdata/share/domains/domain.clm/"): see "prepare_inputdata_norway_plots.ncl"  
+## create surface data file (kept in "inputdata/lnd/clm2/surfdata_map/"):
+##   Step1:create mapping files for generating surface data: use tools included in the model "noresm/models/lnd/clm/tools/shared/mkmapdata"
+##   Step2:use the mapping files and the raw global dateset to create surface data file for a site: use tools included in the model "noresm/models/lnd/clm/tools/clm4_5/mksurfdata_map". The global dateset used to generate surface data are kept in the metadata of the netcdf file of the surface datafile. Global raw dataset can be downloaded from "https://svn-ccsm-inputdata.cgd.ucar.edu/trunk/inputdata/lnd/clm2/rawdata/" 
+
+## create climate forcing (kept in "inputdata/atm/datm7/CLM1PT_data/"): see "prepare_inputdata_norway_plots.ncl"  
+##    data in "1x1_norway_${plotn}_cordex_3hr" are created by ""prepare_inputdata_norway_plots.ncl"
+##    data in "1x1_norway_${plotn}_cordex_6hr" are created by following command from 3hr data:   
+##        ncrcat -O -d time,0,2919,2 clm1pt_1x1_norway_${plotn}_${year}.nc ../1x1_norway_${plotn}_cordex_6hr/clm1pt_1x1_norway_${plotn}_${year}.nc
+
+## create aerosoldep file (kept in "inputdata/atm/cam/chem/trop_mozart_aero/aero" and "inputdata/lnd/clm2/snicardata/"): see "aerdepregrid_norway_plot.ncl"
+
+  cd ./noresm/scripts
+  create_newcase -case ../cases/norway_plot${plotn} -user_compset 2000_DATM%1PT_CLM45%BGCDV_SICE_SOCN_RTM_SGLC_SWAV -mach hexagon -res CLM_USRDAT -mpilib mpich2
+  
+  cd ./noresm/cases/norway_plot${plotn}  
+  xmlchange -file env_run.xml -id RUN_STARTDATE -val 1591-01-01
+  xmlchange -file env_run.xml -id PIO_BUFFER_SIZE_LIMIT -val 0
+  xmlchange -file env_run.xml -id DIN_LOC_ROOT -val ./inputdata
+  xmlchange -file env_run.xml -id DATM_PRESAERO -val pt1_pt1
+  xmlchange -file env_run.xml -id DATM_CLMNCEP_YR_ALIGN -val 1981
+  xmlchange -file env_run.xml -id DATM_CLMNCEP_YR_START -val 1981 
+  xmlchange -file env_run.xml -id DATM_CLMNCEP_YR_END -val 2010
+  xmlchange -file env_run.xml -id CLM_USRDAT_NAME -val 1x1_norway_${plotn}
+  
+  ./cesm_setup
+
+## copy modified codes into "SourceMods/src.clm/" before building the model. See "README.md".
+
+  ./norway_plot${plotn}.build
+  
+## modify user_nl_clm
+  sed -i "21i ndepmapalgo = 'nn'" user_nl_clm
+  sed -i "22i popdensmapalgo = 'nn'" user_nl_clm
+  sed -i "23i stream_year_first_popdens = 2000" user_nl_clm
+  sed -i "24i stream_year_last_popdens = 2000" user_nl_clm
+  sed -i "25i lightngmapalgo = 'nn'" user_nl_clm
+
+  ./norway_plot${plotn}.submit
+
+ fi
+
+  if [ ${second_phase} = "T" ]
+  then
+
+## prepare initial files for long-term run to short spin-up for soil organic carbon and nitrogen (kept in "./inputdata/lnd/clm2/initdata_map")
+##   Use tools provided by the model: "noresm/models/lnd/clm/tools/clm4_5/interpinic"
+##   The global initial file used to interpolate for each site is: clmi.I2000CLM45CRUBGC.2000-01-01.0.9x1.25_gx1v6_simyr2000_c130517.nc (available at: https://svn-ccsm-inputdata.cgd.ucar.edu/trunk/inputdata/lnd/clm2/initdata_map/)  
+
+## modify use_clm_nl 
+    cd ./noresm/cases/norway_plot${plotn}
+    sed -i "26i finidat = './inputdata/lnd/clm2/initdata_map/norway_plot${plotn}.clm2.r.1591-01-06-00000_initial.nc'" user_nl_clm
+ 
+    xmlchange -file env_run.xml -id STOP_OPTION -val nyears
+    xmlchange -file env_run.xml -id STOP_N -val 20
+    xmlchange -file env_run.xml -id REST_OPTION -val nyears
+    xmlchange -file env_run.xml -id RESUBMIT -val 19
+
+    ./norway_plot${plotn}.submit
+
+  fi
+
+done

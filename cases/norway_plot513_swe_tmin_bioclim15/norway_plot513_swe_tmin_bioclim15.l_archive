@@ -1,0 +1,21 @@
+#! /bin/csh -f
+#===============================================================================
+#  This is a NorESM coupled model long term archiving script
+#  IMPORTANT! Only execute this script on hexagon-ftp.bccs.uib.no
+#===============================================================================
+
+#-----------------------------------------------------------------------
+# Determine necessary environment variables
+#-----------------------------------------------------------------------
+
+cd /cluster/home/huit/noresm/cases/norway_plot513_swe_tmin_bioclim15 
+
+source ./Tools/ccsm_getenv || exit -1
+
+#----------------------------------------------
+# run the long term archiver
+#----------------------------------------------
+
+setenv LID "`date +%y%m%d-%H%M%S`"
+$CASETOOLS/noresm_l_archive.bash >&! noresm_la.log.$LID &
+

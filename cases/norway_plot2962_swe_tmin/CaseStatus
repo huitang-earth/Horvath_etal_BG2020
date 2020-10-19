@@ -1,0 +1,100 @@
+create_newcase -case ../cases/norway_plot4268 -user_compset 2000_DATM%1PT_CLM45%BGCDV_SICE_SOCN_RTM_SGLC_SWAV -mach hexagon -res CLM_USRDAT -mpilib mpich2
+case created 2016-11-15 15:37:21
+build complete 2016-11-15 15:52:32
+run submitted 2016-11-15 15:52:38
+run started 2016-11-15 16:01:40
+run SUCCESSFUL 2016-11-15 16:02:38
+run submitted 2016-11-15 17:01:41
+run started 2016-11-15 17:07:51
+run SUCCESSFUL 2016-11-15 19:52:06
+run submitted 2016-11-15 22:59:32
+run started 2016-11-15 23:35:49
+run SUCCESSFUL 2016-11-16 02:20:43
+run started 2016-11-16 02:21:01
+run SUCCESSFUL 2016-11-16 05:05:59
+run started 2016-11-16 07:27:30
+run SUCCESSFUL 2016-11-16 10:16:08
+run submitted 2016-11-16 11:14:44
+run started 2016-11-16 11:57:11
+run SUCCESSFUL 2016-11-16 12:31:12
+cesm_setup -clean 2020-01-15 15:08:01
+ 
+cesm_setup -clean 2020-01-16 05:50:38
+ 
+cesm_setup -clean 2020-01-16 06:22:50
+ 
+cesm_setup -clean 2020-01-16 06:29:32
+ 
+cesm_setup -clean 2020-01-16 15:20:48
+ 
+cesm_setup -clean 2020-01-17 05:54:21
+ 
+cesm_setup -clean 2020-01-17 06:06:37
+ 
+cesm_setup -clean 2020-01-17 06:19:15
+ 
+cesm_setup -clean 2020-01-17 06:23:00
+ 
+cesm_setup -clean 2020-01-17 06:27:44
+ 
+cesm_setup -clean 2020-01-17 06:28:39
+ 
+cesm_setup -clean 2020-01-17 06:30:25
+ 
+cesm_setup -clean 2020-01-17 06:34:32
+ 
+cesm_setup -clean 2020-01-17 06:50:16
+ 
+cesm_setup -clean 2020-01-17 06:51:24
+ 
+build complete 2020-01-17 09:59:22
+run submitted 2020-01-17 10:19:14
+run submitted 2020-01-17 10:25:58
+run started 2020-01-17 10:26:45
+run FAILED 2020-01-17 10:27:19
+run submitted 2020-01-17 11:03:25
+run started 2020-01-17 11:03:32
+run SUCCESSFUL 2020-01-17 11:04:13
+build complete 2020-01-31 12:34:22
+build complete 2020-01-31 13:33:26
+run submitted 2020-01-31 13:36:04
+run started 2020-01-31 13:36:10
+run FAILED 2020-01-31 13:36:53
+run submitted 2020-01-31 13:44:15
+run started 2020-01-31 13:44:20
+run FAILED 2020-01-31 13:45:00
+build complete 2020-01-31 14:32:52
+run submitted 2020-01-31 14:35:07
+run submitted 2020-01-31 14:37:16
+run started 2020-01-31 14:37:20
+run SUCCESSFUL 2020-01-31 14:38:46
+build complete 2020-01-31 16:54:47
+run submitted 2020-01-31 16:55:25
+run started 2020-01-31 16:55:31
+run SUCCESSFUL 2020-01-31 16:57:02
+build complete 2020-01-31 17:51:28
+run submitted 2020-01-31 17:53:21
+run started 2020-01-31 17:53:26
+run SUCCESSFUL 2020-01-31 17:54:54
+build complete 2020-01-31 18:41:05
+run submitted 2020-01-31 18:41:35
+run started 2020-01-31 18:41:39
+run SUCCESSFUL 2020-01-31 18:43:04
+build complete 2020-01-31 18:49:48
+run submitted 2020-01-31 18:50:35
+run started 2020-01-31 18:50:39
+build complete 2020-01-31 19:22:51
+run submitted 2020-01-31 19:24:41
+run started 2020-01-31 19:24:46
+build complete 2020-01-31 20:07:23
+run submitted 2020-01-31 20:14:16
+run started 2020-01-31 20:14:21
+build complete 2020-01-31 20:50:17
+run submitted 2020-01-31 20:51:09
+run started 2020-01-31 20:51:14
+cesm_setup -clean 2020-02-07 03:22:15
+ 
+build complete 2020-02-07 03:33:14
+run submitted 2020-02-07 03:33:20
+run started 2020-02-07 03:33:33
+run SUCCESSFUL 2020-02-07 09:36:14

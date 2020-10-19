@@ -1,0 +1,11 @@
+&modelio
+ diri = '/cluster/work/users/huit/noresm/norway_plot4268_swe/bld/ocn'
+ diro = '/cluster/work/users/huit/noresm/norway_plot4268_swe/run'
+ logfile = 'ocn.log.200207-022714'
+/
+&pio_inparm
+ pio_numiotasks = 32
+ pio_root = 0
+ pio_stride = 16
+ pio_typename = 'netcdf'
+/

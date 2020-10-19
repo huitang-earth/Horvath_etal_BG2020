@@ -1,0 +1,10 @@
+&clm_inparm 
+ndepmapalgo = 'nn'
+popdensmapalgo = 'nn'
+stream_year_first_popdens = 2000
+stream_year_last_popdens = 2000
+lightngmapalgo = 'nn'
+
+hist_fincl2 ='DOWNREG','LEAFC','DEADSTEMC','GPP','NPP','PSNSUN_TO_CPOOL','PSNSHADE_TO_CPOOL','INIT_GPP'
+hist_dov2xy =.true.,.false.
+hist_nhtfrq = 0,0/ 

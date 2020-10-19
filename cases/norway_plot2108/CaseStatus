@@ -1,0 +1,47 @@
+create_newcase -case ../cases/norway_plot2108 -user_compset 2000_DATM%1PT_CLM45%BGCDV_SICE_SOCN_RTM_SGLC_SWAV -mach hexagon -res CLM_USRDAT -mpilib mpich2
+case created 2016-11-15 09:24:53
+build complete 2016-11-15 09:38:23
+run submitted 2016-11-15 09:38:28
+run started 2016-11-15 10:43:21
+run SUCCESSFUL 2016-11-15 10:44:06
+run submitted 2016-11-15 17:01:00
+run started 2016-11-15 17:01:07
+run SUCCESSFUL 2016-11-15 19:55:29
+run submitted 2016-11-15 22:58:51
+run started 2016-11-15 23:05:48
+run SUCCESSFUL 2016-11-16 02:00:58
+run started 2016-11-16 02:01:18
+run SUCCESSFUL 2016-11-16 04:56:40
+run started 2016-11-16 06:32:54
+run SUCCESSFUL 2016-11-16 09:30:43
+run submitted 2016-11-16 11:14:00
+run started 2016-11-16 11:30:45
+run SUCCESSFUL 2016-11-16 12:06:34
+cesm_setup -clean 2020-10-08 23:45:56
+ 
+cesm_setup -clean 2020-10-08 23:47:03
+ 
+cesm_setup -clean 2020-10-08 23:48:23
+ 
+cesm_setup -clean 2020-10-08 23:49:32
+ 
+cesm_setup -clean 2020-10-08 23:50:09
+ 
+cesm_setup -clean 2020-10-08 23:52:57
+ 
+cesm_setup -clean 2020-10-08 23:54:04
+ 
+cesm_setup -clean 2020-10-11 16:25:43
+ 
+build complete 2020-10-11 16:48:24
+run started 2020-10-12 00:40:08
+run FAILED 2020-10-12 00:41:01
+run started 2020-10-12 00:55:35
+run FAILED 2020-10-12 00:56:27
+run started 2020-10-12 01:00:00
+run FAILED 2020-10-12 01:01:15
+run started 2020-10-12 01:19:30
+run SUCCESSFUL 2020-10-12 01:21:25
+run submitted 2020-10-12 01:26:00
+run started 2020-10-12 01:26:23
+run SUCCESSFUL 2020-10-12 03:31:22

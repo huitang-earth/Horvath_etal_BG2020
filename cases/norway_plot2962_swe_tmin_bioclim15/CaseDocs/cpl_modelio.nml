@@ -1,0 +1,11 @@
+&modelio
+ diri = '/cluster/work/users/huit/noresm/norway_plot2962_swe_tmin_bioclim15/bld/cpl'
+ diro = '/cluster/work/users/huit/noresm/norway_plot2962_swe_tmin_bioclim15/run'
+ logfile = 'cpl.log.200207-034438'
+/
+&pio_inparm
+ pio_numiotasks = 32
+ pio_root = 0
+ pio_stride = 16
+ pio_typename = 'netcdf'
+/

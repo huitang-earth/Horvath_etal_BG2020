@@ -1,0 +1,11 @@
+&modelio
+ diri = '/work/huit/noresm/norway_plot513/bld/wav'
+ diro = '/work/huit/noresm/norway_plot513/run'
+ logfile = 'wav.log.161213-134526'
+/
+&pio_inparm
+ pio_numiotasks = 32
+ pio_root = 0
+ pio_stride = 16
+ pio_typename = 'pnetcdf'
+/

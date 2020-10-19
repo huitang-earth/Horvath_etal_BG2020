@@ -1,0 +1,11 @@
+&modelio
+ diri = '/work/huit/noresm/norway_plot6380/bld/cpl'
+ diro = '/work/huit/noresm/norway_plot6380/run'
+ logfile = 'cpl.log.161116-141757'
+/
+&pio_inparm
+ pio_numiotasks = 32
+ pio_root = 0
+ pio_stride = 16
+ pio_typename = 'pnetcdf'
+/

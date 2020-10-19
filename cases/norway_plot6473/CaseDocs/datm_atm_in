@@ -1,0 +1,14 @@
+&shr_strdata_nml
+ datamode = 'CLMNCEP'
+ domainfile = '/work/huit/inputdata/share/domains/domain.clm/domain.lnd.1x1_norway_6473_navy.nc'
+ dtlimit = 1.5,1.5,1.5,1.5
+ fillalgo = 'nn','nn','nn','nn'
+ fillmask = 'nomask','nomask','nomask','nomask'
+ mapalgo = 'nn','nn','nn','nn'
+ mapmask = 'nomask','nomask','nomask','nomask'
+ streams = "datm.streams.txt.CLM1PT.CLM_USRDAT.Solar 1981 1981 2010", "datm.streams.txt.CLM1PT.CLM_USRDAT.Precip 1981 1981 2010",
+         "datm.streams.txt.CLM1PT.CLM_USRDAT.TPQW 1981 1981 2010", "datm.streams.txt.presaero.pt1_pt1.CLM_USRDAT 1 1 1"
+ taxmode = 'cycle','cycle','cycle','cycle'
+ tintalgo = 'coszen','nearest','linear','linear'
+ vectors = 'null'
+/

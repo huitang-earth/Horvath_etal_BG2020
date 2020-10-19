@@ -1,0 +1,62 @@
+#
+# Makefile Macros generated from /home/uio/huit/noresm/scripts/ccsm_utils/Machines/config_compilers.xml using
+# COMPILER=intel
+# OS=CNL
+# MACH=hexagon
+#
+CPPDEFS+= -DFORTRANUNDERSCORE -DNO_R16 -DLINUX  -DCNL -DCPRINTEL 
+
+CFLAGS:= -O2 -fp-model precise 
+
+CXX_LDFLAGS:= -cxxlib 
+
+CXX_LINKER:=FORTRAN
+
+FC_AUTO_R8:= -r8 
+
+FFLAGS:= -O2 -fp-model source -convert big_endian -assume byterecl -ftz -traceback  -no-vec 
+
+FFLAGS_NOOPT:= -O0 
+
+FIXEDFLAGS:= -fixed -132 
+
+FREEFLAGS:= -free 
+
+MPICC:= cc 
+
+MPICXX:= CC 
+
+MPIFC:= ftn 
+
+MPI_LIB_NAME:= mpich 
+
+MPI_PATH:= $(MPICH_DIR)
+
+NETCDF_PATH:= $(NETCDF_DIR)
+
+PIO_CONFIG_OPTS:= --enable-filesystem-hints=lustre 
+
+PNETCDF_PATH:=/work/apps/pnetcdf/1.2.0-intel/
+
+SCC:= cc 
+
+SCXX:= CC 
+
+SFC:= ftn 
+
+SUPPORTS_CXX:=TRUE
+
+ifeq ($(DEBUG), TRUE) 
+   FFLAGS += -g -CU -check pointers -fpe0 
+endif
+
+ifeq ($(compile_threaded), true) 
+   LDFLAGS += -openmp 
+   CFLAGS += -openmp 
+   FFLAGS += -openmp 
+endif
+
+ifeq ($(MODEL), micom) 
+   FFLAGS +=-r8 -DPNETCDF -I/work/apps/pnetcdf/1.2.0-intel/include/
+endif
+

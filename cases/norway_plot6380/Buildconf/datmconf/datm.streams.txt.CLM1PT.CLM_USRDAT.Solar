@@ -1,0 +1,61 @@
+      <dataSource>
+         GENERIC
+      </dataSource>
+      <domainInfo>
+         <variableNames>
+            time    time
+            xc      lon
+            yc      lat
+            area    area
+            mask    mask
+         </variableNames>
+         <filePath>
+            /work/huit/inputdata/share/domains/domain.clm
+         </filePath>
+         <fileNames>
+            domain.lnd.1x1_norway_6380_navy.nc
+         </fileNames>
+      </domainInfo>
+      <fieldInfo>
+         <variableNames>
+            FSDS     swdn
+         </variableNames>
+         <filePath>
+            /work/huit/inputdata/atm/datm7/CLM1PT_data/1x1_norway_6380_cordex_3hr
+         </filePath>
+         <fileNames>
+            clm1pt_1x1_norway_6380_1981.nc
+            clm1pt_1x1_norway_6380_1982.nc
+            clm1pt_1x1_norway_6380_1983.nc
+            clm1pt_1x1_norway_6380_1984.nc
+            clm1pt_1x1_norway_6380_1985.nc
+            clm1pt_1x1_norway_6380_1986.nc
+            clm1pt_1x1_norway_6380_1987.nc
+            clm1pt_1x1_norway_6380_1988.nc
+            clm1pt_1x1_norway_6380_1989.nc
+            clm1pt_1x1_norway_6380_1990.nc
+            clm1pt_1x1_norway_6380_1991.nc
+            clm1pt_1x1_norway_6380_1992.nc
+            clm1pt_1x1_norway_6380_1993.nc
+            clm1pt_1x1_norway_6380_1994.nc
+            clm1pt_1x1_norway_6380_1995.nc
+            clm1pt_1x1_norway_6380_1996.nc
+            clm1pt_1x1_norway_6380_1997.nc
+            clm1pt_1x1_norway_6380_1998.nc
+            clm1pt_1x1_norway_6380_1999.nc
+            clm1pt_1x1_norway_6380_2000.nc
+            clm1pt_1x1_norway_6380_2001.nc
+            clm1pt_1x1_norway_6380_2002.nc
+            clm1pt_1x1_norway_6380_2003.nc
+            clm1pt_1x1_norway_6380_2004.nc
+            clm1pt_1x1_norway_6380_2005.nc
+            clm1pt_1x1_norway_6380_2006.nc
+            clm1pt_1x1_norway_6380_2007.nc
+            clm1pt_1x1_norway_6380_2008.nc
+            clm1pt_1x1_norway_6380_2009.nc
+            clm1pt_1x1_norway_6380_2010.nc
+         </fileNames>
+         <offset>
+            0
+         </offset>
+      </fieldInfo>

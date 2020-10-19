@@ -1,0 +1,10 @@
+stream_fldfilename_popdens = /cluster/work/users/huit/inputdata/lnd/clm2/firedata/clmforc.Li_2012_hdm_0.5x0.5_AVHRR_simyr1850-2010_c130401.nc
+stream_fldfilename_lightng = /cluster/work/users/huit/inputdata/atm/datm7/NASA_LIS/clmforc.Li_2012_climo1995-2011.T62.lnfm_c130327.nc
+fpftcon = /cluster/work/users/huit/inputdata/lnd/clm2/pftdata/pft-physiology.c130503.nc
+fsnowaging = /cluster/work/users/huit/inputdata/lnd/clm2/snicardata/snicar_drdt_bst_fit_60_c070416.nc
+fsnowoptics = /cluster/work/users/huit/inputdata/lnd/clm2/snicardata/snicar_optics_5bnd_c090915.nc
+fsurdat = /cluster/work/users/huit/inputdata/lnd/clm2/surfdata_map/surfdata_1x1_norway_622_simyr2000.nc
+fatmlndfrc = /cluster/work/users/huit/inputdata/share/domains/domain.clm/domain.lnd.1x1_norway_622_navy.nc
+finidat = /work/users/huit/norway_plot622/run/norway_plot622.clm2.r.1591-01-06-00000_initial.nc
+megan_factors_file = /cluster/work/users/huit/inputdata/atm/cam/chem/trop_mozart/emis/megan21_emis_factors_c20120313.nc
+stream_fldfilename_ndep = /cluster/work/users/huit/inputdata/lnd/clm2/ndepdata/fndep_clm_hist_simyr1849-2006_1.9x2.5_c100428.nc

@@ -1,0 +1,61 @@
+      <dataSource>
+         GENERIC
+      </dataSource>
+      <domainInfo>
+         <variableNames>
+            time    time
+            xc      lon
+            yc      lat
+            area    area
+            mask    mask
+         </variableNames>
+         <filePath>
+            /cluster/work/users/huit/inputdata/share/domains/domain.clm
+         </filePath>
+         <fileNames>
+            domain.lnd.1x1_norway_622_navy.nc
+         </fileNames>
+      </domainInfo>
+      <fieldInfo>
+         <variableNames>
+            FSDS     swdn
+         </variableNames>
+         <filePath>
+            /cluster/work/users/huit/inputdata/atm/datm7/CLM1PT_data/1x1_norway_622_cordex_3hr
+         </filePath>
+         <fileNames>
+            clm1pt_1x1_norway_622_1981.nc
+            clm1pt_1x1_norway_622_1982.nc
+            clm1pt_1x1_norway_622_1983.nc
+            clm1pt_1x1_norway_622_1984.nc
+            clm1pt_1x1_norway_622_1985.nc
+            clm1pt_1x1_norway_622_1986.nc
+            clm1pt_1x1_norway_622_1987.nc
+            clm1pt_1x1_norway_622_1988.nc
+            clm1pt_1x1_norway_622_1989.nc
+            clm1pt_1x1_norway_622_1990.nc
+            clm1pt_1x1_norway_622_1991.nc
+            clm1pt_1x1_norway_622_1992.nc
+            clm1pt_1x1_norway_622_1993.nc
+            clm1pt_1x1_norway_622_1994.nc
+            clm1pt_1x1_norway_622_1995.nc
+            clm1pt_1x1_norway_622_1996.nc
+            clm1pt_1x1_norway_622_1997.nc
+            clm1pt_1x1_norway_622_1998.nc
+            clm1pt_1x1_norway_622_1999.nc
+            clm1pt_1x1_norway_622_2000.nc
+            clm1pt_1x1_norway_622_2001.nc
+            clm1pt_1x1_norway_622_2002.nc
+            clm1pt_1x1_norway_622_2003.nc
+            clm1pt_1x1_norway_622_2004.nc
+            clm1pt_1x1_norway_622_2005.nc
+            clm1pt_1x1_norway_622_2006.nc
+            clm1pt_1x1_norway_622_2007.nc
+            clm1pt_1x1_norway_622_2008.nc
+            clm1pt_1x1_norway_622_2009.nc
+            clm1pt_1x1_norway_622_2010.nc
+         </fileNames>
+         <offset>
+            0
+         </offset>
+      </fieldInfo>

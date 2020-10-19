@@ -1,0 +1,11 @@
+&modelio
+ diri = '/cluster/work/users/huit/noresm/norway_plot1131_swe/bld/ice'
+ diro = '/cluster/work/users/huit/noresm/norway_plot1131_swe/run'
+ logfile = 'ice.log.200207-030821'
+/
+&pio_inparm
+ pio_numiotasks = 32
+ pio_root = 0
+ pio_stride = 16
+ pio_typename = 'netcdf'
+/

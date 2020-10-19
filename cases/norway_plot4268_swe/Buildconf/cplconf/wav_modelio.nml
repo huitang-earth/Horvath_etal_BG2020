@@ -1,0 +1,11 @@
+&modelio
+ diri = '/cluster/work/users/huit/noresm/norway_plot4268_swe/bld/wav'
+ diro = '/cluster/work/users/huit/noresm/norway_plot4268_swe/run'
+ logfile = 'wav.log.201008-225633'
+/
+&pio_inparm
+ pio_numiotasks = 32
+ pio_root = 0
+ pio_stride = 16
+ pio_typename = 'netcdf'
+/

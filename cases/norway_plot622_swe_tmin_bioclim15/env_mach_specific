@@ -1,0 +1,32 @@
+#! /bin/csh -f
+
+#===============================================================================
+# SAGA machine specific settings
+#===============================================================================
+
+#-------------------------------------------------------------------------------
+# Modules
+#-------------------------------------------------------------------------------
+
+#if (-e /cluster/software/lmod/lmod/init/csh) then
+#  source /usr/bin/csh
+  source /etc/profile.d/z00_lmod.csh
+  module --force purge
+  module load StdEnv
+  module load intel/2018b 
+  module load netCDF-Fortran/4.4.4-intel-2018b
+  module load CMake/3.12.1
+#endif
+
+# The environment variables below produce corefiles and maybe (?) should be
+# moved to DEBUG mode at some point
+#setenv decfort_dump_flag Y
+#limit coredumpsize unlimited
+
+# The environment variable below increase the stack size, which is necessary for
+# CICE to run threaded on this machine.  
+setenv KMP_STACKSIZE 64M
+setenv I_MPI_EXTRA_FILESYSTEM_LIST lustre
+setenv I_MPI_EXTRA_FILESYSTEM on
+limit stacksize unlimited
+

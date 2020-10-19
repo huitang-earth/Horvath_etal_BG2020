@@ -1,0 +1,9 @@
+&clm_inparm 
+ndepmapalgo = 'nn'
+popdensmapalgo = 'nn'
+stream_year_first_popdens = 2000
+stream_year_last_popdens = 2000
+lightngmapalgo = 'nn'
+finidat = '/work/users/huit/norway_plot513_swe_tmin_bioclim15/run/norway_plot513.clm2.r.1591-01-06-00000_initial.nc'
+
+/ 

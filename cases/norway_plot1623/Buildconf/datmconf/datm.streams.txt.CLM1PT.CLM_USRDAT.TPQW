@@ -1,0 +1,64 @@
+      <dataSource>
+         GENERIC
+      </dataSource>
+      <domainInfo>
+         <variableNames>
+            time    time
+            xc      lon
+            yc      lat
+            area    area
+            mask    mask
+         </variableNames>
+         <filePath>
+            /work/huit/inputdata/share/domains/domain.clm
+         </filePath>
+         <fileNames>
+            domain.lnd.1x1_norway_1623_navy.nc
+         </fileNames>
+      </domainInfo>
+      <fieldInfo>
+         <variableNames>
+            TBOT     tbot
+            SHUM     shum
+            WIND     wind
+            PSRF     pbot
+         </variableNames>
+         <filePath>
+            /work/huit/inputdata/atm/datm7/CLM1PT_data/1x1_norway_1623_cordex_6hr
+         </filePath>
+         <fileNames>
+            clm1pt_1x1_norway_1623_1981.nc
+            clm1pt_1x1_norway_1623_1982.nc
+            clm1pt_1x1_norway_1623_1983.nc
+            clm1pt_1x1_norway_1623_1984.nc
+            clm1pt_1x1_norway_1623_1985.nc
+            clm1pt_1x1_norway_1623_1986.nc
+            clm1pt_1x1_norway_1623_1987.nc
+            clm1pt_1x1_norway_1623_1988.nc
+            clm1pt_1x1_norway_1623_1989.nc
+            clm1pt_1x1_norway_1623_1990.nc
+            clm1pt_1x1_norway_1623_1991.nc
+            clm1pt_1x1_norway_1623_1992.nc
+            clm1pt_1x1_norway_1623_1993.nc
+            clm1pt_1x1_norway_1623_1994.nc
+            clm1pt_1x1_norway_1623_1995.nc
+            clm1pt_1x1_norway_1623_1996.nc
+            clm1pt_1x1_norway_1623_1997.nc
+            clm1pt_1x1_norway_1623_1998.nc
+            clm1pt_1x1_norway_1623_1999.nc
+            clm1pt_1x1_norway_1623_2000.nc
+            clm1pt_1x1_norway_1623_2001.nc
+            clm1pt_1x1_norway_1623_2002.nc
+            clm1pt_1x1_norway_1623_2003.nc
+            clm1pt_1x1_norway_1623_2004.nc
+            clm1pt_1x1_norway_1623_2005.nc
+            clm1pt_1x1_norway_1623_2006.nc
+            clm1pt_1x1_norway_1623_2007.nc
+            clm1pt_1x1_norway_1623_2008.nc
+            clm1pt_1x1_norway_1623_2009.nc
+            clm1pt_1x1_norway_1623_2010.nc
+         </fileNames>
+         <offset>
+            10800
+         </offset>
+      </fieldInfo>
