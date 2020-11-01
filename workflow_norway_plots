@@ -57,7 +57,7 @@ for plotn in $plots; do
   if [ ${second_phase} = "T" ]
   then
 
-## prepare initial files for long-term run to short spin-up for soil organic carbon and nitrogen (kept in "./inputdata/lnd/clm2/initdata_map")
+## prepare initial files for long-term run to shorten spin-up for soil organic carbon and nitrogen (kept in "./inputdata/lnd/clm2/initdata_map")
 ##   Use tools provided by the model: "noresm/models/lnd/clm/tools/clm4_5/interpinic"
 ##   The global initial file used to interpolate for each site is: clmi.I2000CLM45CRUBGC.2000-01-01.0.9x1.25_gx1v6_simyr2000_c130517.nc (available at: https://svn-ccsm-inputdata.cgd.ucar.edu/trunk/inputdata/lnd/clm2/initdata_map/)  
 
