@@ -1,5 +1,7 @@
 # Horvath_etal_BG2020
 
+![DOI](https://zenodo.org/badge/303474715.svg)](https://zenodo.org/badge/latestdoi/303474715)
+
 ## Model code
    - https://github.com/metno/noresm/tree/trunk2.0-4
    - To obtain the model code, please follow the instructions on: https://wiki.met.no/noresm/start
