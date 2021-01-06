@@ -28,7 +28,7 @@
       * models/drv/bld/build-namelist (bug fixing)
         
 ## Model input and output data 
-   - Can be downloaded from: https://ns2806k.webs.sigma2.no/EMERALD/Horvath_etal_BG2020/ 
+   - Can be downloaded from:  http://doi.org/10.5281/zenodo.4415544 
 
 ## Content of the repository:
    - **cases** folder: cases created for running the 20 site experiments.
